@@ -1,7 +1,7 @@
 class BinarySearch
   def self.random_array(size: 0, max: 0)
     arr = []
-    while arr.size < size 
+    while arr.size < size
       elem = rand(max)
       arr << elem unless arr.include?(elem)
     end
