@@ -14,13 +14,9 @@ class BinarySearch
     while low <= high do
       mid = (low + high) / 2
       guess = arr[mid]
-      if guess == item
-        return mid
-      elsif guess < item
-        low = mid + 1
-      else guess > item
-        high = mid - 1
-      end
+      return mid if guess.eql?(item)
+      low  = mid + 1 if guess < item
+      high = mid - 1 if guess > item
     end
     return nil
   end
