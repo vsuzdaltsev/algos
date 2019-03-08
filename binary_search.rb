@@ -18,6 +18,6 @@ class BinarySearch
       low  = mid + 1 if guess < item
       high = mid - 1 if guess > item
     end
-    return nil
+    nil
   end
 end
