@@ -8,9 +8,7 @@ class BinarySearch
     arr.sort
   end
 
-  def self.run(arr, item)
-    low  = 0
-    high = arr.size - 1
+  def self.run(arr, item, low = 0, high = arr.size - 1)
     while low <= high do
       mid = (low + high) / 2
       guess = arr[mid]
