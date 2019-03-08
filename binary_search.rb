@@ -10,9 +10,10 @@ class BinarySearch
 
   def self.run(arr, item, low = 0, high = arr.size - 1)
     while low <= high do
-      mid = (low + high) / 2
+      mid   = (low + high) / 2
       guess = arr[mid]
       return mid if guess.eql?(item)
+
       low  = mid + 1 if guess < item
       high = mid - 1 if guess > item
     end
