@@ -1,3 +1,4 @@
+# Binary search
 class BinarySearch
   def self.random_int_array(size: 0, max: 0)
     arr = []
@@ -21,7 +22,7 @@ class BinarySearch
   end
 
   def self.run(arr, item, low = 0, high = arr.size - 1)
-    while low <= high do
+    while low <= high
       mid   = (low + high) / 2
       guess = arr[mid]
       return mid if guess.eql?(item)
@@ -31,5 +32,4 @@ class BinarySearch
     end
     nil
   end
-
 end
