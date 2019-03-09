@@ -12,7 +12,7 @@ class BinarySearch
 
     def random_str_array(size: 0, str_len: 0)
       size.times.map.each_with_object([]) do |_t, memo|
-        memo << BinarySearch.random_str(str_len: str_len)
+        memo << random_str(str_len: str_len)
       end.sort
     end
 
