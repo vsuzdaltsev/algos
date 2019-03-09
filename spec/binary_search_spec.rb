@@ -1,6 +1,17 @@
 module Helper
   INT_ARRAY = [11, 22, 33, 44, 55, 66, 77, 88, 99, 111].freeze
-  STR_ARRAY = %w[depfm fayik ggfhj hywle ohngr skjlz toedw wziyq xdpgm ylzyo].freeze
+  STR_ARRAY = %w[
+    depfm
+    fayik
+    ggfhj
+    hywle
+    ohngr
+    skjlz
+    toedw
+    wziyq
+    xdpgm
+    ylzyo
+  ].freeze
 end
 
 describe 'BinarySearch.search' do
