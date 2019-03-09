@@ -15,12 +15,6 @@ class BinarySearch
     end.sort
   end
 
-  def self.random_str(str_len: 0)
-    str_len.times.map.each_with_object('') do |_t, memo|
-      memo << ('a'..'z').to_a.sample
-    end
-  end
-
   def self.run(arr, item, low = 0, high = arr.size - 1)
     while low <= high
       mid   = (low + high) / 2
@@ -31,5 +25,13 @@ class BinarySearch
       high = mid - 1 if (guess <=> item) == 1
     end
     nil
+  end
+
+  private
+
+  def self.random_str(str_len: 0)
+    str_len.times.map.each_with_object('') do |_t, memo|
+      memo << ('a'..'z').to_a.sample
+    end
   end
 end
