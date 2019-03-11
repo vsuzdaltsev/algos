@@ -8,6 +8,7 @@ class Random
         arr << elem unless arr.include?(elem)
       end
       return arr unless sort
+
       arr.sort
     end
 
@@ -16,6 +17,7 @@ class Random
         memo << random_str(str_len: str_len)
       end
       return arr unless sort
+
       arr.sort
     end
 
