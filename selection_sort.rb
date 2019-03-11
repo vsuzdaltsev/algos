@@ -8,15 +8,13 @@ class SelectionSort
         memo << arr_dup.delete_at(smallest)
       end
     end
-    
+
     private
 
     def smallest_element_index(arr)
       smallest_index = 0
       arr.each_with_index do |_elem, index|
-        if arr[index] < arr[smallest_index]
-          smallest_index = index
-        end
+        smallest_index = index if arr[index] < arr[smallest_index]
       end
       smallest_index
     end
