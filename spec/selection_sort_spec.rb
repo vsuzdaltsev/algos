@@ -13,8 +13,8 @@ end
 
 describe 'SelectionSort.run' do
   before do
-    @arr    = [33, 44, 55, 66, 1, 22]
-    @sorted = [1, 22, 33, 44, 55, 66]
+    @arr    = Random.int_array(size: 100, max: 100, sort: false)
+    @sorted = @arr.sort
   end
 
   context 'when process given array' do
