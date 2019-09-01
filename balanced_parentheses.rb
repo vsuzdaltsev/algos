@@ -9,10 +9,10 @@ def balanced?(string)
   closing = ')'
 
   string.chars.each_with_object([]) do |sym, stack|
-    if sym == opening
+    if sym.eql?(opening)
       stack << closing
     else
-      return false unless stack.pop == sym
+      return false unless stack.pop.eql?(closing)
     end
   end.empty?
 end
