@@ -1,13 +1,15 @@
-def balanced? string
+# frozen_string_literal: true
+
+def balanced?(string)
   return false if string.length.odd?
 
-  return false if string =~ /[^\[\]\(\)\{\}]/
+  return false if string =~ /[^\(\)]/
 
-  pairs = { '(' => ')' }
+  opening = '('
+  closing = ')'
 
   string.chars.each_with_object([]) do |sym, stack|
-    closing = pairs[sym]
-    if closing
+    if sym == opening
       stack << closing
     else
       return false unless stack.pop == sym
