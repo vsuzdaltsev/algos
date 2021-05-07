@@ -37,6 +37,8 @@ def num_ways_with_memo(n, cache={0: 1, 1: 1}):
     return ret
 
 
+tab = "\t"
+
 # print(f">> NUM_WAYS({param}): {num_ways(int(param))}")
-print(f">> NUM_WAYS_IMPROVED({param}): {num_ways_improved(int(param))}")
-print(f">> NUM_WAYS_WITH_MEMO({param}): {num_ways_with_memo(int(param))}")
+print(f">> NUM_WAYS_IMPROVED({param}):{tab}{num_ways_improved(int(param))}")
+print(f">> NUM_WAYS_WITH_MEMO({param}):{tab}{num_ways_with_memo(int(param))}")
