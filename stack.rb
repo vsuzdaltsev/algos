@@ -3,7 +3,7 @@
 class Stack
   def initialize
     @store = []
- end
+  end
 
   def push(x)
     @store.push x

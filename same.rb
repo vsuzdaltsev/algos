@@ -1,8 +1,8 @@
 class Array
   def same_structure_as(array)
     return false unless array.is_a?(Array)
-    
-    self.parse_nested.eql?(array.parse_nested)
+
+    parse_nested.eql?(array.parse_nested)
   end
 
   def parse_nested(obj = self)
